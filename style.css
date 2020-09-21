@@ -4,6 +4,7 @@
 }
 body{
   font-family:'Montserrat' sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -105,7 +106,13 @@ nav ul li a:hover{
     align-items: center;
     justify-content: space-evenly;
     z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
   }
+  
+  nav ul.slide{
+  transform: translateX(0);
+}
   .menu-toggle{
     display: flex;
   }
